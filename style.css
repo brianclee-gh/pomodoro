@@ -1,0 +1,78 @@
+:root {
+    background-color: #fff;
+}
+
+#container {
+    display: grid;
+    justify-content: center;
+    margin: 50px 0 0 0 ;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px;
+    grid-template-areas: 
+    "header header header"
+    "timer timer timer"
+    "buttons buttons buttons";
+    width: 500px;
+    height: 400px;
+    
+}
+
+#header {
+    grid-area: header;
+    text-align: center;
+    color: #43a047;
+
+    font-family: 'Merienda', cursive;
+}
+
+#header p {
+    font-size: 40px;
+}
+
+#display p {
+    font-size: 35px;
+}]
+
+#selectionBar {
+    grid-area: select;
+    background-color: #e53935;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.select {
+    
+}
+
+#display {
+    grid-area: timer;
+    background-color:#e53935;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45%;
+    margin: 0 0 -20px 0;
+}
+
+#buttons {
+    grid-area: buttons;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    
+}
+
+.button {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #43a047;
+    padding: 10px 10px;
+    margin: 0 20px;
+    border-radius: 30%;
+
+}
